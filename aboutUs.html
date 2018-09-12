@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>关于我们</title>
 		<link rel="shortcut icon" href="img/logo.png">
-		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<link rel="stylesheet" href="css/shijianzhou.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<!-- <a name="CompanyHistory"></a> -->
-			<div class="con2" id="CompanyHistory" data-page="2">
+			<div class="con2" id="CompanyHistory">
 				<!-- <span><img src="img/aboutUs-rec-line-left.jpg" alt=""></span> -->
 				<span><img src="img/p-left-icon.png" alt=""></span>
 				<span class="con-word-p">发展历程</span>
@@ -76,7 +76,7 @@
 		<div class="footer">
 			<div class="detail">
 				<div class="bfooter-c">
-				<div class="model">
+					<div class="model">
 						<div><a href="#2">百科全书</a></div>
 						<div><a href="#2">保障问题</a></div>
 						<div><a href="#3">碰瓷问题</a></div>
@@ -84,8 +84,8 @@
 					</div>
 					<div class="model">
 						<div><a href="aboutUs.html">关于公司</a></div>
-						<div><a href="aboutUs.html#CompanyProfile">公司简介</a></div>
-						<div><a href="aboutUs.html#CompanyHistory">公司历程</a></div>
+						<div><a class="CompanyProfile" href="aboutUs.html#CompanyProfile">公司简介</a></div>
+						<div><a class="CompanyHistory" href="aboutUs.html#CompanyHistory">公司历程</a></div>
 						<div><a href="aboutUs.html#ContactUs">联系我们</a></div>
 					</div>
 					<div class="model">
@@ -119,42 +119,25 @@
 	</body>
 	<script type="text/javascript" src="js/util.js"></script>
 	<script type="text/javascript" src="js/aboutUs.js"></script> 
-	<script src='js/jquery.eventFlow.js'></script>
-	<script>
-		$(function() {
-			 var bigEvent = [{
-				'year': 2018,
-				'events': [{
-					'mouths': 5,
-					'times': '2018年1月',
-					'even': '与深圳卡友帮达成战略合作协议'
-				}]
-			}, {
-				'year': 2017,
-				'events': [{
-					'mouths': 5,
-					'times': '2017年12月',
-					'even': '获得三捷投资、富德投资、成为智能pre-A轮1500万融资'
-				}]
-			}, {
-				'year': 2016,
-				'events': [{
-					'mouths': 5,
-					'times': '2016年',
-					'even': '推出优驾·众保汽车分红型相互保障产品'
-				}]
-			}, {
-				'year': 2015,
-				'events': [{
-					'mouths': 5,
-					'times': '2015年12月11日',
-					'even': '众保汽车俱乐部成立'
-				}]
-			}];
-			$('.event_wrap').eventFlow({
-				'events': bigEvent
-			});
-		})
-	</script>
+	<script type="text/javascript" src="js/jquery.eventFlow.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// var offsetSize = $(".con1").innerHeight();
+			//window.location.hash 得到的是锚链接,相比如href,通过window.location.hash并不会跳转到新的链接，只会在当前链接里面
+			var nowHash = window.location.hash;
+			$("html, body").animate({scrollTop:$(window.location.hash).offset().top -150 }, 500); 
+		});
+		
+		//当前页点击无法滑动定位,使用click
+// 		$(".CompanyProfile").click(function(){
+// 			$("html, body").animate({scrollTop:$(window.location.hash).offset().top -150 }, 500); 
+// 		});
+		$("a").click(function(){
+			this;
+			this.hash;
+			$("html, body").animate({scrollTop:$(this.hash).offset().top -150 }, 500);
+		});
+ 	</script>
 
 </html>

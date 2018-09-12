@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>隐私条款</title>
+		<link rel="shortcut icon" href="img/logo.png">
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/container.js"></script>
+		<link rel="stylesheet" href="css/panel.css" />
+	</head>
+
+	<body>
+		<div class="header b-header">
+			<div class="container">
+				<!--<span class="fl-right lang-zh"></span>
+				<a href="login.html" class="fl-right icon-user"></a>-->
+				<ul class="menu">
+					<li tabindex="0" data-index="4">
+						<!--<a href="login.html">登录 | 注册</a>-->
+						<a><span1 onclick="util.redict('login.html')">登录</span1> | <span1 onclick="util.redict('register.html')">注册</span1></a>
+						<!--|-->
+						<!--<a href="register.html">注册</a>-->
+					</li>
+					<li tabindex="0" data-index="3">
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li tabindex="0" data-index="2">
+						<a href="carOwnersEncyclopedia.html">车主百科</a>
+					</li>
+					<li tabindex="0" data-index="1">
+						<a href="securityCanter.html">保障大厅</a>
+					</li>
+					<li tabindex="0" class="active" data-index="0">
+						<a href="ClaimCenter.html">理赔中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="userCenter.html">个人中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+				<span class="fl-left icon-logo"></span>
+			</div>
+		</div>
+		<div id="deatil"></div>
+		<div class="footer">
+			<div class="detail">
+				<div class="bfooter-c">
+					<div class="model">
+						<div><a href="#2">活动专区</a></div>
+						<div><a href="#2">进行活动</a></div>
+						<div><a href="#3">热门活动</a></div>
+						<div><a href="#2">往期活动</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于公司</a></div>
+						<div><a href="#2">公司简介</a></div>
+						<div><a href="#2">加入我们</a></div>
+						<div><a href="#3">企业动态</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于我们</a></div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wb'></span>">新浪微博</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wx'></span>">官方微信</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-tt'></span>">官方头条</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="fl-right">
+					<div>联系方式</div>
+					<div>400-100-0306</div>
+					<div>(周一至周日9:00-18:30)</div>
+				</div>
+				<!--<div class="sidebar">侧边栏</div>-->
+			</div>
+			
+
+			<div class="f-bootom">
+				<img src="./img/bottom-line.png"/>
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有  | <a href="ZBLawStatement.html">法律申明</a> | <a href="ZBTiaoKuan.html">隐私条款</a></p>
+				<p><a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a></p>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/handlebars.min.js"></script>
+<script type="text/x-handlebars-template" id="entry-template">
+		<div class="container p-top p-bottom">
+			{{#each result}}
+			{{#if top}}
+			<div class="panel panel-top" data-page={{page}}>
+			{{else}}
+			<div class="panel panel-default">
+			{{/if}}
+				<div class="panel-heading">				
+					<h3 class="panel-title"> 
+						{{title}}
+					</h3>						
+				</div>
+				<div class="panel-body">					
+					<p>
+						{{#each detail}}
+						<span>{{text}}</span>
+						{{/each}}
+					</p>					
+				</div>
+			</div>
+			{{/each}}
+		</div>
+</script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/ZBTiaoKuan.js"></script>
+
+</html>

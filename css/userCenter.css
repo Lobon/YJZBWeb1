@@ -1,0 +1,79 @@
+body{
+	font-family: "平方中体";
+}
+.user-center{
+	height: 640px;
+	width: 100%;
+	border-bottom: 1px solid #E6E6E6;
+	overflow: hidden;
+}
+.user-center .container{
+	margin-top: 100px;
+	height: 440px;
+	border: 1px solid #E6E6E6;
+	-moz-box-shadow: 0px 0px 1px 1px #E6E6E6; /* 老的 Firefox */
+	box-shadow: 0px 0px 1px 1px #E6E6E6;
+	border-radius: 10px;
+	padding: 0;
+	width: 1170px;
+}
+.user-center .container .user{
+	height: 100%;
+	width: 308px;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #E6E6E6;
+}
+.user-center .container .user div{
+	width: 160px;
+	height: 250px;
+	margin-left: 74px;
+	margin-top: 95px;	
+}
+.user div span{
+	width: 160px;
+	height: 162px;	
+	display: block;
+	background-image: url(../img/ren.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+.user div p{
+	text-align: center;
+	font-family: "平方中体";
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+#username{
+	font-size: 18px;
+}
+.user-center .container ul{
+	list-style: none; 
+}
+.user-center .container ul li{
+	width: 215px;
+	height: 220px;
+	float: left;
+	border-right: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.user-center .container ul li span:first-child{
+	display: block;
+	width: 100%;
+	height: 55%;
+	background: url(../img/icon-order1.png) 50% bottom no-repeat;
+}
+.user-center .container ul li span:nth-child(2){
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #666666;
+	font-family: "平方中体";
+}
+.user-center .container ul li a:hover, .user-center .container ul li a:focus{
+	text-decoration: none;
+}

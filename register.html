@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/container.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/accountPanel.css" />
+	</head>
+
+	<body>
+		<div class="header b-header">
+			<div class="container">
+				<!--<span class="fl-right lang-zh"></span>
+				<span class="fl-right icon-user"></span>-->
+
+				<ul class="menu">
+					<li tabindex="0" data-index="4">
+						<!--<a href="login.html">登录 | 注册</a>-->
+						<a class="active"><span1 onclick="util.redict('login.html')">登录</span1> | <span1 onclick="util.redict('register.html')">注册</span1></a>
+						<!--|-->
+						<!--<a href="register.html">注册</a>-->
+					</li>
+					<li tabindex="0" data-index="3">
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li tabindex="0" data-index="2">
+						<a href="carOwnersEncyclopedia.html">车主百科</a>
+					</li>
+					<li tabindex="0" data-index="1">
+						<a href="securityCanter.html">保障大厅</a>
+					</li>
+					<li tabindex="0" class="active" data-index="0">
+						<a href="ClaimCenter.html">理赔中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="userCenter.html">个人中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+				<span class="fl-left icon-logo"></span>
+			</div>
+		</div>		
+		<div class="container">
+			<div class="accountbox">
+				<span class="account-header bottom-border">注册众保ID</span>
+				<div class="form">
+					<form role="form">
+						<div class="alert alert-danger" style="display: none;"></div>
+						<div class="input-group  input-group-lg input-type1">
+							<span class="input-group-addon account-icon-user"></span>
+							<input id="phone" type="text" class="form-control" placeholder="手机号">							
+						</div>
+						<div class="input-group  input-group-lg input-type2">
+							<span class="input-group-addon account-icon-code"></span>
+							<input id="verification" type="text" class="form-control" placeholder="验证码">
+						</div><button id="btn-verification" type="button" class="btn btn-default fl-right">获取验证码</button>
+						<div class="input-group  input-group-lg input-type1">
+							<span class="input-group-addon account-icon-password"></span>
+							<input id="passwd" type="text" class="form-control" placeholder="密码">							
+						</div>
+						<div class="input-group  input-group-lg input-type1">
+							<span class="input-group-addon account-icon-password"></span>
+							<input id="repasswd" type="text" class="form-control" placeholder="重复密码">							
+						</div>						
+						<div class="low_login bottom1">
+							<a class="checked" href="javascript:void(0);"></a><label>我已阅读并同意遵守 <a href="ZBLawStatement.html">法律申明</a> 和 <a href="ZBTiaoKuan.html">隐私条款</a></label>
+						</div>
+						<button id="submit" type="button" class="top1 btn btn-lg btn-block" disabled="disabled">注册</button>
+					</form>
+					<p>如果您已拥有众保ID，则可在此<a href="login.html">登录</a></p>
+				</div>
+			</div>
+			<div class="account-footer">
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有 | <a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a> | <a href="ZBLawStatement.html">法律申明</a> | <a href="ZBTiaoKuan.html">隐私条款</a></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+
+</html>

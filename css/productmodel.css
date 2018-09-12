@@ -1,0 +1,435 @@
+p{
+	display: block;
+}
+
+/*中间模块的样式 model1为一级页面的样式*/
+.marg-r-75{
+	margin-right: 75px;
+}
+.model-m-top{
+	margin-top: 240px;
+}
+.model1:nth-child(2n+1), .model2:nth-child(2n){
+	background: #FFFFFF;
+}
+.model1:nth-child(2n), .model2:nth-child(2n+1){
+	background: #FFFFFF;
+}
+.model1, .modal2{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.modal1{
+	height: 800px;
+}
+.model1 .container{
+	margin-top: 240px;
+	height: 559px;
+	border-bottom: 1px solid #E6E6E6;
+	font-family: "平方中体";
+}
+.model2 .container{
+	font-family: "平方中体";
+}
+.model1 .model-img{
+	width: 570px;
+	height: 320px;
+}
+.model1:nth-child(2n+1) .model-img{
+	float: left;
+	margin-right: 75px;
+}
+.model1:nth-child(2n) .model-img{
+	float: right;
+}
+.model1 .container .context{
+	width: 490px;
+}
+.model1:nth-child(2n+1) .container .context{
+	float: left;
+}
+.model1:nth-child(2n) .container .context{
+	float: right;
+}
+.model1 .container .context h3 h4 p{
+	display: block;
+}
+.model1 .container .context h3{
+	text-align: center;
+	font-weight: 300;
+	font-size: 20px;
+}
+.model1 .container .context h3:first-of-type{
+	font-size: 30px;	
+	font-weight: 500;
+}
+.model1 .container .context h3:last-of-type{
+	margin-bottom: 75px;
+}
+.model1 .container .context h4{
+	font-size: 14px;
+	font-weight: 500;
+}
+.model1 .container .context p{
+	font-size: 14px;
+	color: #999999;	
+}
+.model1:nth-child(2n+1) .container .context p, .model1:nth-child(2n+1) .container .context h4{
+	margin: 0px 0px 0px 0px;
+	line-height: 200%;
+}
+.model1:nth-child(2n) .container .context p, .model1:nth-child(2n) .container .context h4{
+	margin: 0px 30px 0px 30px;	
+	line-height: 200%;
+}
+
+/*banner样式*/
+.banner-privateCar{
+	background: url(../img/22.png) 50% 50% no-repeat;
+	margin-top: 80px;
+}
+.banner-convoy{
+	background: url(../img/tuanche.jpg) 50% 50% no-repeat;
+	margin-top: 80px;
+}
+.banner-pengci{
+	background: url(../img/44.png) 50% 50% no-repeat;
+	margin-top: 80px;
+}
+
+.banner{
+	width: 100%;
+	height: 500px;	
+}
+.banner .mask{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: rgba(255,255,255,0.6);
+
+}
+.banner .mask p{
+	text-align: center;
+	width: 100%;
+}
+.banner .mask p:first-of-type{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	font-size: 60px;
+	font-family: "叶根友毛笔行书简体";
+} 
+.banner .mask p:nth-of-type(2){
+	position: absolute;
+	top: 60%;
+	font-size: 28px;
+	font-family: "平方中体";
+}
+
+/*产品介绍模块*/
+.model-introduction{
+	width: 100%;
+	height: 360px;
+	background: #FAFAFA;
+}
+.model-introduction .container{
+	position: relative;
+	font-family: "PingFang-SC-Regular";
+	height: 359px;
+	border-bottom: 1px solid #E6E6E6;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.model-introduction .container div{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.model-introduction .container div p{
+	width: 100%;
+	text-align: center;
+	line-height: 170%;
+	font-size: 20px;
+}
+.model-introduction .container div p:first-of-type{font-weight: 600;font-size: 24px;}
+.model-introduction .container div p:nth-child(n+2){
+	color: #999999;
+}
+/*一级页面底部*/
+.product-bottom{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+.product-bottom .container{
+	font-family: "平方中体";
+	height: 659px;
+}
+.product-bottom .container .title{
+	margin-top: 140px;
+	margin-bottom: 120px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 8px; /*字间距*/
+}
+.product-bottom .container .title span{
+	color: #E5717A;
+}
+.product-bottom .container div{
+	float: left;
+	width: 280px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 14px;
+	line-height: 250%;
+	height: 100%;
+}
+.product-bottom .container div p{
+	width: 100%;
+	text-align: center;
+}
+.product-bottom .container div p:last-child{
+	color: #999999;
+}
+.product-bottom .container div p a{
+	color: blue;
+}
+.product-bottom .container div p a:hover{
+	cursor: pointer;
+}
+.product-bottom .container div span{
+	display: block;
+	color: #999999;
+	text-align: left;
+}
+
+/*团车版页面*/
+.product-pk{
+	background: url(../img/pk.png) 50% 65% no-repeat;
+	background-color: #FAFAFA;
+}
+
+/*产品介绍*/
+.Product-introduction-outer{
+	text-align: center;
+}
+.Product-introduction{
+	position: relative;
+    /*box-shadow:0px 0px  10px 2px #aaa;  /* 投影*/
+   	background-color: white;
+   	z-index: 2;
+	margin-top: -100px;
+}
+
+.main-page-list {
+	text-align: center;
+}
+.main-page-list img {
+	/*border: 1px dashed;*/
+	margin-top: 80px;
+}
+
+
+/*关于我们 abutUs.html*/
+
+	.about-us{
+		width: 100%;	
+		overflow: hidden;
+		text-align: center;
+		background-color: #FFFFFF;
+		}
+	.about-us .line{
+		display: inline-block;
+		width: 280px;
+		border-top: 1px solid rgba(210,210,210,1) ;/*线条粗细线型颜色 虚线为dashed*/ 
+	/* 	width:280px;
+		height:1px;
+		border:1px solid rgba(210,210,210,1); */
+		border-radius:50%;    /* 两头削尖 */
+	}
+	/* 大菱形 */
+	.about-us .aboutUs-1-rec {
+		/* margin-left: -30px; */
+		/* left: 50%; */
+		/* display: block; */
+		position: absolute;
+		/* margin-top: 158px; */
+		width: 15.5px;
+		height: 15.5px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		border:1px solid rgba(210,210,210,1);
+	}
+	/* 小菱形 */
+	.about-us .aboutUs-2-rec {
+		/* margin-left: -8px;	 */
+		/* left: 50%; */
+		/* display: block; */
+		position: absolute;
+		/* margin-top: 158px; */
+		width: 13px;
+		height: 13px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		border:1px solid rgba(210,210,210,1);
+	}
+
+	 /*标题字 */
+	.about-us .con-word-p{
+/* 			width:148px;
+		height:34px; */
+		font-size:36px;
+		font-family:PingFang-SC-Bold;
+		font-weight:bold;
+		color:rgba(51,51,51,1);
+		line-height:77px;
+		vertical-align: middle;
+		letter-spacing: 5px;
+	}
+	.about-us .con-word-text{
+		width:261px;
+		height:16px;
+		font-size:20px;
+		font-family:PingFang-SC-Medium;
+		font-weight:500;
+		color:rgba(102,102,102,1);
+		/* line-height:107px; */
+	}
+	.about-us .con-company-profile{
+		font-size:15px;
+		font-family:PingFang-SC-Medium;
+		font-weight:500;
+		color:rgba(102,102,102,1);
+		letter-spacing:2px;
+		margin-top: 50px;
+		width: 1300px;    /* 设置总宽度,防止页面缩小撑破外面的div */
+	}
+	.about-us .con-company-profile span{
+		float: left;
+		text-align: left;
+	}
+	.about-us .con-company-profile span:nth-child(odd){
+		border:1px solid rgba(235,235,235,1);
+		padding: 20px;
+	}
+	.about-us .con-company-profile span:nth-child(even){
+		margin-left: 50px;
+		line-height: 200%;
+	}
+	.about-us .con1 {
+		display: inline-block;
+		margin-top: 70px;
+	}
+	.about-us .con2, .con3 {
+		margin-top: 70px;
+	}
+	.about-us .con2-img, .con3-img{
+		margin-top: 50px;
+	}
+	.about-us .con1 span:nth-child(1), .about-us .con2 span:nth-child(1), .about-us .con3 span:nth-child(1){
+		margin-right: 20px;
+	}
+	.about-us .con1 span:nth-child(3), .about-us .con2 span:nth-child(3), .about-us .con3 span:nth-child(3){
+		margin-left: 20px;
+	}
+
+body{
+	font-family: "平方中体";
+}
+
+/* 碰瓷 */
+.pengci-5{
+			background:rgba(252,252,252,1);
+			height: 750px;
+			text-align: center;
+		}
+		.pengci-5 .pengci-word-p{
+			font-size: 36px;
+			font-family: PingFang-SC-Bold;
+			font-weight: bold;
+			color: rgba(51,51,51,1);
+			line-height: 77px;
+			vertical-align: middle;
+			letter-spacing: 5px;
+		}
+		
+		.pengci-5 .pengci-text-p{
+			width: 261px;
+			height: 16px;
+			font-size: 20px;
+			font-family: PingFang-SC-Medium;
+			font-weight: 500;
+			color: rgba(102,102,102,1);
+		}
+		.pengci-5 .pengci-5-list{
+			float: left;
+			display: inline-block;
+		}
+		.pengci-5 .pengci-5-list-pad{
+			margin-left: 53px;
+		}
+		.pengci-5 .pengci-5-list:nth-child(1){
+			width: 260px;
+			height: 210px;
+			background: url(../img/pengci-boli.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(1):hover{
+			background: url(../img/pengci-boli-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(2){
+			width: 440px;
+			height: 210px;
+			background: url(../img/pengci-tebie.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(2):hover{
+			background: url(../img/pengci-tebie-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(3){
+			width: 260px;
+			height: 210px;
+			background: url(../img/pengci-sheshui.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(3):hover{
+			background: url(../img/pengci-sheshui-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(4){
+			width: 260px;
+			height: 230px;
+			background: url(../img/pengci-wufa.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(4):hover{
+			background: url(../img/pengci-wufa-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(5){
+			width: 440px;
+			height: 230px;
+			background: url(../img/pengci-ziran.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(5):hover{
+			background: url(../img/pengci-ziran-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(6){
+			width: 260px;
+			height: 230px;
+			background: url(../img/pengci-huahen.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(6):hover{
+			width: 260px;
+			height: 230px;
+			background: url(../img/pengci-huahen-red.png);	
+		}
+		.pengci-5 .pengci-5-list:nth-child(4),.pengci-5 .pengci-5-list:nth-child(5),.pengci-5 .pengci-5-list:nth-child(6){
+			margin-top: 39px;
+		}
+		.pengci-5 .pengci-5-img{
+			overflow:hidden;
+			width: 1070px;
+			margin: 30px auto
+		}

@@ -1,0 +1,41 @@
+
+{ 
+"schedule":{
+"title1":"保障单配送进度查询",
+"title2":"GUARNTEE SINGLE DELIVERY SCHEDULE QUERY",
+"img":"img-process",
+"schedule":[{"name":"待揽件"},
+			{"name":"运输"},
+			{"name":"派送"},
+			{"name":"签收"}],
+"transform":[]
+},
+
+"guarantee":{
+"title1":"电子保障单信息",
+"title2":"GUARNTEE SINGLE DELIVERY SCHEDULE",
+"log":"以下信息来源于您的入会申请，是为您提供服务的重要依据",
+"datail":{}
+},
+
+"insurance":{
+"title1":"保障单加保",
+"title2":"GUARNTEE SINGLE INSURANCE",
+"inp-carno":"车牌号",
+"inp-id":"被保障人证件号",
+"btn-text":"立即加保"
+},
+
+"violation":{
+"title1":"违章查询",
+"title2":"VIOLATION INQUIRY",
+"inp-city":"查询城市",
+"inp-serch-carno":"查询车牌",
+"inp-buy-year":"购车年月",
+"inp-telcode":"手机验证",
+"btn-code":"发送验证码",
+"btn-text":"快速查询"
+}
+
+}
+ 

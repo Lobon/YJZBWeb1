@@ -1,0 +1,73 @@
+
+body{
+	font-family: "平方中体";
+}
+.p-top{
+	margin-top: 50px;
+}
+.p-bottom{
+	margin-bottom: 50px;
+}
+.panel-body{
+	font-size: 16px;
+	border: 1px solid #EEEEEE;
+	margin-bottom: 40px;
+}
+.panel-body span{
+	line-height: 220%;
+	display: block;
+}
+.panel-body img{
+	height: 200px;
+	width: 200px;
+}
+.panel-body>p:nth-child(n+3){
+	margin-top: 50px;
+}
+.panel-heading {
+	padding: 0px 30px 0px;
+  	background: #EEEEEE;
+  	color: #333333;
+}
+.panel-heading h3{background: url(../img/icon-head-logo.png) 0% no-repeat;padding:0 25px 0;display: inline-block;line-height: 60px;}
+
+/*adoutUs*/
+.about-qmac, .about-active{
+	width: 100%;	
+	overflow: hidden;
+	text-align: center;
+}
+.about-qmac{
+	background: #FFFFFF;
+	height: 600px;
+}
+.about-active .container>h3, .about-qmac .container>h3{
+	margin-top: 190px;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.about-qmac p{
+	font-size: 18px;
+	line-height: 180%;
+}
+.about-active{
+	background: #F7F7F7;
+}
+
+
+/*题卡*/
+.card-panel{
+	
+}
+.card-panel .card-img{
+	
+}
+.card-panel .q-icon, .card-panel .r-icon{
+	
+}
+.card-panel .text-question{
+	
+}
+.card-panel .text-response{
+	
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>会员信息</title>
+		<link rel="shortcut icon" href="img/logo.png">
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-switch.min.css" /> 
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/container.js"></script>
+		<link rel="stylesheet" href="css/userPanel.css" />		
+		<script type="text/javascript" src="js/bootstrap-switch.min.js"></script> 
+	</head>
+
+	<body>
+		<div class="header b-header">
+			<div class="container">
+				<span class="fl-right lang-zh"></span>
+				<a href="login.html" class="fl-right icon-user"></a>
+				<ul class="menu"> 
+					<li tabindex="0" data-index="3"> 
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li tabindex="0" data-index="2">
+						<a href="carOwnersEncyclopedia.html">车主百科</a>
+					</li>
+					<li tabindex="0" data-index="1">
+						<a href="securityCanter.html">保障大厅</a>
+					</li>
+					<li tabindex="0" class="active" data-index="0">
+						<a href="ClaimCenter.html">理赔中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="userCenter.html" class="active">个人中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="index.html">首页</a>
+					</li> 
+				</ul>
+				<span class="fl-left icon-logo"></span>
+			</div>
+		</div>
+		<div class="container p-top p-bottom x-height">
+			<div class="catalogue">
+				<div class="user-detail">
+					<span class="fl-right icon-user"></span>
+					<p>+86 136***3495</p>
+				</div>
+				<ul>
+					<li>
+						<a href="todoList.html">代办事项</a>
+					</li>
+					<li>
+						<a href="orderList.html">我的订单</a>
+					</li>
+					<li>
+						<a href="myPlanlist.html">我的保障单</a>
+					</li>
+					<li><a href="myCliam.html">我的理赔</a></li>
+					<li>驾驶评分</li>
+					<li><a href="account.html">我的账户</a></li>
+					<li class="selected">会员信息</li>
+					<li>会员头像</li>
+					<li>邀请好友</li>
+				</ul>
+			</div>
+			<div class="panel panel-top">
+				<div class="panel-heading">
+					<h3 class="panel-title selected" data-page=1>个人信息</h3>
+					<h3 class="panel-title" data-page=2>车辆信息</h3>
+					<h3 class="panel-title" data-page=3>常用被保险人</h3>
+					<h3 class="panel-title" data-page=4>常用地址</h3>
+					<h3 class="panel-title" data-page=5>投保资料上传</h3>
+					<div class="dropdown">
+						<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+							全部服务
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">全部服务</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">全部服务</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">全部服务</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel-body min-height"  data-index=1>
+					<div class="content">
+						<div class="row p-top4">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>车牌号:</span></div>
+							<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>性别:</span></div>
+							<div class="col-sm-6 col-md-6 col-lg-6"><input type="checkbox" name="my-checkbox" checked></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>联系电话:</span></div>
+							<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入电话号码"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>电子邮箱:</span></div>
+							<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入电子邮箱"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>联系地址:</span></div>
+							<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入联系地址"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span></span></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><button type="button" class="btn btn-block btn-primary">立即提交</button></div>
+							<div class="col-sm-3 col-md-3 col-lg-3 btn-clear">清空重填</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body min-height" style="padding: 15px 50px 15px 0;" data-index=2>
+					<div class="content">
+						<div class="row p-top4">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>车牌号:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>机动车种类:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>使用性质:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>发动机号:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>识别代码（车型号）:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>处登记日期:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>厂牌型号:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>核定载客:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>核定载质量:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>排量:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>功率:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>已使用年限:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top2">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>行驶区域:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span>平均行驶里程:</span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+						</div>
+						<div class="row p-top5">
+							<div class="col-sm-2 col-md-2 col-lg-2  input-label"><span></span></div>
+							<div class="col-sm-2 col-md-2 col-lg-2"><button type="button" class="btn btn-block btn-primary">立即提交</button></div>
+							<div class="col-sm-2 col-md-2 col-lg-2 btn-clear">清空重填</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body min-height"  data-index=3>
+					<div class="content">
+						<div class="img-process"></div>
+						<ul class="ul-process">
+							<li class="active">
+								<p>电话报案出险</p>
+								<p>专人一对一服务</p>
+								<p>责任确认 损失核定</p>
+							</li>
+							<li class="active">
+								<p>提交索赔材料</p>
+								<p>三证一卡</p>
+								<p>责任认定书</p>
+								<p>维修发票</p>
+							</li>
+							<li>
+								<p>索赔审核</p>
+								<p>利用UBI技术还原事故现场</p>
+								<p>审核索赔材料真实性</p>
+							</li>
+							<li>
+								<p>理赔公示</p>
+								<p>理赔情况会</p>
+								<p>在微信公众号公式</p>
+							</li>
+							<li>
+								<p>领取赔款</p>
+								<p>会员领取赔款</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel-body min-height"  data-index=4>
+					<ul>
+						<li class="level1">
+							<div class="content">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel-body min-height"  data-index=5>
+					<ul>
+						<li class="level1">
+							<div class="content">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel-body min-height"  data-index=6>
+					<ul>
+						<li class="level1">
+							<div class="content">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section fp-auto-height footer footer-color">
+			<div class="detail">
+				<div class="model  l-margin">
+					<div>活动专区</div>
+					<div>进行活动</div>
+					<div>热门活动</div>
+					<div>往期活动</div>
+				</div>
+				<div class="model">
+					<div>关于公司</div>
+					<div>公司简介</div>
+					<div>加入我们</div>
+					<div>企业动态</div>
+				</div>
+				<div class="model">
+					<div>关于我们</div>
+					<div data-toggle="tooltip" title="<span class='code-wb'></span>">新浪微博</div>
+					<div data-toggle="tooltip" title="<span class='code-wx'></span>">官方微信</div>
+					<div data-toggle="tooltip" title="<span class='code-tt'></span>">官方头条</div>
+				</div>
+				<div class="fl-right r-margin">
+					<div>400-100-0306</div>
+					<div>周一至周日9：00-18：30（仅收市话费）</div>
+				</div>
+			</div>
+			<div class="f-bootom l-margin r-margin">
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有 |
+					<a>法律申明</a> |
+					<a>隐私条款</a> 
+				</p>
+				<p>
+					<a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a>
+				</p>
+			</div>
+	</body>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/userInfo.js"></script>
+
+</html>

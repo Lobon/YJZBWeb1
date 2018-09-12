@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>理赔中心</title>
+		<link rel="shortcut icon" href="img/logo.png">
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/container.js"></script>
+		<link rel="stylesheet" href="css/ClaimCenter.css" />
+		<link rel="stylesheet" href="css/productmodel.css" />
+		<link rel="stylesheet" href="css/panel.css" />
+		<script type="text/javascript" src="js/mHeader.js"></script>
+		<script src="js/extendPagination.js"></script>
+	</head>
+
+	<body>
+		<!--菜单栏-->
+		<div class="header b-header" id="header" data-page = "2" ></div>
+		<div class="banner-img img-lipei"></div><!--banner-->
+		<div id="claim-deatil1"></div>
+		<div id="claim-deatil3"></div>
+
+		</ul>
+		<div class="footer">
+			<div class="detail">
+				<div class="bfooter-c">
+					<div class="model">
+						<div><a href="#2">活动专区</a></div>
+						<div><a href="#2">进行活动</a></div>
+						<div><a href="#3">热门活动</a></div>
+						<div><a href="#2">往期活动</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于公司</a></div>
+						<div><a href="#2">公司简介</a></div>
+						<div><a href="#2">加入我们</a></div>
+						<div><a href="#3">企业动态</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于我们</a></div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wb'></span>">新浪微博</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wx'></span>">官方微信</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-tt'></span>">官方头条</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="fl-right">
+					<div>联系方式</div>
+					<div>400-100-0306</div>
+					<div>(周一至周日9:00-18:30)</div>
+				</div>
+				<!--<div class="sidebar">侧边栏</div>-->
+			</div>
+			
+
+			<div class="f-bootom">
+				<img src="./img/bottom-line.png"/>
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有  | <a href="ZBLawStatement.html">法律申明</a> | <a href="ZBTiaoKuan.html">隐私条款</a></p>
+				<p><a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/handlebars.min.js"></script>
+	<script type="text/x-handlebars-template" id="entry-template1">
+		
+		<div class='model2' data-page=1>
+			<div class="container h-height2">
+				<div class="p-headline b-top">
+					<p class="p-head1">
+						<span class="p-left-icon"></span>
+						<span class="p-title1">{{process.title1}}</span>
+						<span class="p-right-icon"></span>
+					</p>
+					<span class="p-title2">{{process.title2}}</span>
+				</div>	
+				<div class="img-process"></div> 
+			</div>
+		</div>
+	</script>
+	<script type="text/x-handlebars-template" id="entry-template3">
+		<div class='model2' data-page=4>
+			<div class="container">
+				<div class="p-headline h-bottom3">
+					<p class="p-head1">
+						<span class="p-left-icon"></span>
+						<span class="p-title1">{{claimlist.title1}}</span>
+						<span class="p-right-icon"></span>
+					</p>
+					<span class="p-title2">{{claimlist.title2}}</span>
+				</div>	
+				<ul class="claim-list">
+					{{#each claimlist.list}}
+					<li>
+						<div>
+							<img src={{img}} />
+							<span>{{title}}</span>
+						</div>
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		<div class='model2' data-page=5>
+			<div class="container">
+				<div class="p-headline b-top h-bottom3">
+					<p class="p-head1">
+						<span class="p-left-icon"></span>
+						<span class="p-title1">{{problemlist.title1}}</span>
+						<span class="p-right-icon"></span>
+					</p>
+					<span class="p-title2">{{problemlist.title2}}</span>
+				</div>
+				{{#each problemlist.list}}
+				<div class="panel panel-default">
+					<div class="panel-heading">		
+						<h3 class="panel-title"> 
+							{{problem}}
+						</h3>						
+					</div>
+					<div class="panel-body">
+						<span>{{title2}}</span>
+						<span>{{detail}}</span>
+						{{#each answer}}
+						<span>{{text}}</span>
+						{{/each}}
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/ClaimCenter.js"></script>
+
+</html>

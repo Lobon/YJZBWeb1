@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1170px) {
+	html{	
+		overflow-x:scroll; 
+		width: 1170px;
+	}
+
+}
+
+@media only screen and (min-width: 1171px) {
+
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*叶根友毛笔行书简体*/
+@font-face {
+	font-family: '叶根友毛笔行书简体';
+	src: url('../font/YGY.eot');
+	src: 
+	url('../font/YGY.eot?#font-spider') format('embedded-opentype'),
+    url('../font/YGY.woff') format('woff'),
+    url('../font/YGY.ttf') format('truetype'),
+    url('../font/YGY.svg') format('svg');
+    font-weight: normal;
+  	font-style: normal;
+} 
+/*平方中体*/
+@font-face {
+	font-family: '平方中体';
+	src: url('../font/medium.ttf');
+}
+.fl-right{
+	float: right;
+}
+.m-right{
+	margin-right: 2rem; 
+}
+
+/*页面首标题top距离*/
+.b-top{margin-top: 80px;}
+/*底部边框*/
+.bottom-border{
+	border-bottom: 1px solid #E6E6E6;
+}
+/*输入框点击时的样式*/
+.form-control:focus{
+	border-color: #E5717A;
+  	outline: 0;
+  	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*返回top按钮*/
+#toTop{
+	position: fixed;
+	bottom: 95px;
+	right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#toTop .fa {margin-right: 5px;}
+/*弹出窗口*/
+#pop{
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+#pop>img{width: 40%;left: 30%;top: 50%;position: fixed;  
+-webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);}
+/*页面标题图*/
+.banner-img{
+	width: 100%;
+	height: 460px;	
+	margin-top: 80px;
+}
+/*页面banner图片*/
+.img-lipei{background:url(../img/01.png) 50% 50% no-repeat;}
+.img-carowners{background:url(../img/01.png) 50% 50% no-repeat;}
+.img-aboutUs{background:url(../img/aboutUs_top_bg.jpg) 50% 50% no-repeat;}
+/*小标题*/
+.p-headline{
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+.p-headline .p-head1{display: table;margin: auto;}
+.p-headline .p-title1{
+	color: #333333;
+	font-size: 34px;
+	line-height: 35px;
+	font-weight: 600;
+	float: left;
+}
+.p-headline .p-title2{
+	color: #666666;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	line-height: 35px;
+	
+}
+.p-headline .p-left-icon{
+	height: 35px;
+	width: 330px;
+	display: inline-block;
+	background: url(../img/p-left-icon.png) 50% no-repeat;
+	line-height: 35px;
+	float: left;
+}
+.p-headline .p-right-icon{
+	height: 35px;
+	width: 330px;
+	display: inline-block;
+	background: url(../img/p-right-icon.png) 50% no-repeat;
+	float: left;
+}
+/*底部浮窗*/
+.float_window {
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	z-index: 99;
+}
+.float_window .d-icon {
+	width: 100%;
+	display: table;
+	position: relative;
+	height: 40px;
+}
+.float_window .float-text {
+	height: 40px;
+	width: 40px;
+	background-color: rgba(225, 225, 225, .2);
+	opacity: 0;
+	display: block;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	float: right;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #FFFFFF;
+	position: absolute;
+	right: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*用于文字省略*/
+	transition: width 1s;
+	-moz-transition: width 1s, -moz-transform 1s;
+	/* Firefox 4 */
+	-webkit-transition: width 1s, -webkit-transform 1s;
+	/* Safari and Chrome */
+	-o-transition: width 1s, -o-transform 1s;
+	/* Opera */
+}
+.float_window .float-text:hover {
+	opacity: 1;
+	padding-right: 20px;
+}
+.float_window .float-text-tel:hover{
+	width: 180px;
+}.float_window .float-text-qq:hover{
+	width: 170px;
+}.float_window .float-text-top:hover{
+	width: 140px;
+}
+.float_window .float_icon {
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	float: right;
+}
+.float_window .float_tag {
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 20px;
+	float: right;
+}
+.float_window .tel_icon {background-image: url(../img/icon-tel-img.png);}
+.float_window .qq_icon {background-image: url(../img/icon-qq-img.png);}
+.float_window .code_icon {background-image: url(../img/icon-code-img.png);}
+.float_window .top_icon {background-image: url(../img/icon-top-img.png);}
+.float_window .d-icon #code {
+	height: 160px;
+	width: 40px;
+	display: block;
+	border-radius: 20px;
+	background-image: url(../img/weixincode2.png);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0px;
+	opacity: 0;
+	transition: width 1s;
+	-moz-transition: width 1s, -moz-transform 1s;
+	/* Firefox 4 */
+	-webkit-transition: width 1s, -webkit-transform 1s;
+	/* Safari and Chrome */
+	-o-transition: width 1s, -o-transform 1s;
+	/* Opera */
+}
+.float_window .d-icon #code:hover {
+	width: 220px;
+	opacity: 1;
+}
+.float_window #btn-top{cursor: pointer;}

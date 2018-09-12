@@ -1,0 +1,134 @@
+
+body{font-family: "平方中体";}
+body{
+	background: #f8f8f8;
+}
+@media only screen and (max-width: 1680px) {
+	.b-header,.menu li{height: 80px;}
+	.menu li{line-height: 80px;}
+	
+}
+.top1{
+	margin-top: 30px;
+}
+.bottom1{
+	margin-bottom: 25px;
+}
+.bottom-border{
+	border-bottom: 1px solid #DDDDDD;
+	line-height: 70px;
+}
+.accountbox{
+	width: 450px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	-webkit-border-radius: 4px;
+	box-shadow: darkgrey 0px 0px 2px 2px rgba(221,221,221,.8); 
+	-webkit-box-shadow: darkgrey 0px 0px 2px 2px rgba(221,221,221,.8);
+  	-moz-box-shadow: darkgrey 0px 0px 2px 2px rgba(221,221,221,.8);
+	margin-top: 50px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	margin-left: 50%;
+	overflow: hidden;
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+    background-image:      -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f3f3f3));
+    background-image:         linear-gradient(to bottom, #ffffff 0%, #f3f3f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+    background-repeat: repeat-x;
+}
+.accountbox .form{
+	padding: 50px 40px 0 40px;
+}
+.accountbox .account-img{
+	width: 100%;
+	height: 85px;
+	display: block;
+	margin-top: 50px;
+}
+.accountbox .account-tag{
+	display: block;
+	height: 20px;
+	width: 20px;
+	float: right;
+	margin: 8px;
+	cursor: pointer;
+}
+.accountbox .account-header{
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+}
+.form>p{
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	line-height: 180%;
+	display: block;
+}
+.form>p:first-of-type{
+	margin-top: 20px;
+}
+.form>p:last-of-type{
+	margin-bottom: 20px;
+}
+.account-footer a, .form a{
+	text-decoration: none;
+	color: #E5717A;
+	cursor: pointer;
+}
+.account-footer a:hover, .account-footer a:focus, .form a:hover,.form a:focus{
+	color: #B75A62;
+}
+form{border-bottom: 1px solid #DDDDDD;padding: 0 0 30px 0;}
+form .input-group-addon{width: 50px;}
+form .input-type1{width: 100%;margin-bottom: 16px;}
+form .input-type2{width: 70%;float: left;margin-bottom: 16px;}
+form .btn-default{height: 45px;}
+.low_login{width: 100%; float: left;}
+.low_login label{font-size: 16px; color: #CCCCCC;margin-left: 8px;}
+/*
+.low_login>a:first-of-type{
+	height: 20px;
+	width: 20px;
+	float: left;
+	text-decoration: none;
+}*/
+.low_login a{
+	cursor: pointer;
+}
+.low_login span{
+	color: #CCCCCC;
+}
+.low_login>a, .low_login>span{
+	font-size: 12px;
+	float: right;
+	margin-left: 5px;
+}
+.low_login label>a{font-size: 16px;}
+.low_login .checked{background: url(../img/icon-checked.png) 50% no-repeat;}
+.low_login .unchecked{background: url(../img/icon-uncheck.png) 50% no-repeat;}
+/*logo*/
+.account-logo{background: url(../img/account-logo.png) 50% no-repeat ;}
+/*切换图标*/
+.account-icon-change{background: url(../img/account-icon-change1.png) 50% no-repeat;}
+.account-icon-change:hover, .account-icon-change:focus{background: url(../img/account-icon-change2.png) 50% no-repeat;}
+/*输入姓名图标*/
+.account-icon-user{background: url(../img/account-icon-user1.png) 50% no-repeat;}
+/*输入密码图标*/
+.account-icon-password, .account-icon-pssword-login{background: url(../img/account-icon-password1.png) 50% no-repeat;}
+.account-icon-pssword-login:hover, .account-icon-pssword-login:focus{background: url(../img/account-icon-password2.png) 50% no-repeat;}
+/*输入姓名验证码*/
+.account-icon-code{background: url(../img/account-icon-code1.png) 50% no-repeat;}
+.account-footer{margin-top: 50px;border-top: 1px solid #DDDDDD;
+width: 100%;text-align: center;
+padding: 20px;}
+.account-footer p{
+	font-size: 12px;
+	color:#999999;
+}
+.account-footer p:first-child{margin-bottom: 8px;}
+

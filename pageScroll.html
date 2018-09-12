@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery单页/全屏滚动插件onepage-scroll演示-不显示项目导航</title>
+<link rel="stylesheet" href="css/onepage-scroll.css" />
+<style>
+.page1 { background-color: #A2C6D1;}
+.page2 { background-color: #A2D1BF;}
+.page3 { background-color: #CBD1A2;}
+.page4 { background-color: #D1BCA2;}
+p.title { position: relative; top: 35%; font: 700 40px "Microsoft Yahei"; color: #fff; text-align: center;}
+</style>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.onepage-scroll.min.js"></script>
+<script src="js/menu-effects.js"></script>
+<link rel="stylesheet" href="css/index.css" />
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: '.page',
+		pagination: false
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="header">
+		<ul class="menu">
+			<li tabindex="0">
+				venitian
+				<ul class="submenu venitian">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="page page1">
+			<p class="title">第一屏</p>
+		</div>
+		<div class="page page2">
+			<p class="title">第二屏</p>
+		</div>
+		<div class="page page3">
+			<p class="title">第三屏</p>
+		</div>
+		<div class="page page4 test">
+			<p class="title">第四屏</p>
+		</div> 
+	</div>
+	
+
+
+
+
+
+
+
+</body>
+</html>

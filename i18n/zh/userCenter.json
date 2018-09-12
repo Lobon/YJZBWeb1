@@ -1,0 +1,12 @@
+{
+"result":[
+{"title":"待办事项","src":"icon-waiting1.png","active":"icon-waiting2.png","href":"#"},
+{"title":"我的订单","src":"icon-order1.png","active":"icon-order2.png","href":"#"},
+{"title":"我的保障单","src":"icon-baozhang1.png","active":"icon-baozhang2.png","href":"#"},
+{"title":"我的理赔","src":"icon-claim1.png","active":"icon-claim2.png","href":"#"},
+{"title":"我的评分","src":"icon-rating1.png","active":"icon-rating2.png","href":"#"},
+{"title":"我的账户","src":"icon-account1.png","active":"icon-account2.png","href":"#"},
+{"title":"邀请好友","src":"icon-Invitation1.png","active":"icon-Invitation2.png","href":"#"},
+{"title":"会员信息","src":"icon-info1.png","active":"icon-info2.png","href":"#"}
+]
+} 

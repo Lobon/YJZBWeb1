@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>model</title>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="css/model.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="test"></div>
+		<div class="model1">
+			<div class="container">
+				<img class="model-img" src="img/01.jpg"/>
+				<div class="context">
+					<h3>车损保障:</h3>
+					<h3>赔付爱车的损失</h3>
+					<h4>适用场景：</h4>
+					<p>A车主撞到停车场墙柱，道路护栏致使自己的车辆受损</p>
+					<p>B车主不小心撞到了别人的车辆</p>
+					<p>C车主刚买的新车停车场被碰撞，找不到肇事者，自己车辆受损</p>
+					<p>D车主所在地发生台风极端天气，倒下树木致使自己车辆受损</p>
+				</div>
+			</div>
+		</div>
+		<div class="model1">
+			<div class="container">
+				<img class="model-img" src="img/01.jpg"/>
+				<div class="context">
+					<h3>产品责任（盗抢保障免费赠送）</h3>
+					<h3>负责赔付全车被盗抢、被抢劫、</h3>
+					<h3>被抢夺造成车辆的损失</h3>
+					<h4>适用场景：</h4>
+					<p>A车主撞到停车场墙柱，道路护栏致使自己的车辆受损</p>
+					<p>B车主不小心撞到了别人的车辆</p>
+					<p>C车主刚买的新车停车场被碰撞，找不到肇事者，自己车辆受损</p>
+					<p>D车主所在地发生台风极端天气，倒下树木致使自己车辆受损</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/modelList.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			getFile("zh.json",function(list){
+				$("body").append(list);
+			});
+			
+			var docEl = document.documentElement || document.body
+			var width1 = parseInt((docEl.clientWidth - 1170) / 2);
+			width1 = width1>=0?width1+"px":0;
+			$('.container').css("margin-left", width1);
+			$('.container').css("margin-right", width1);
+			var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					//设置根字体大小
+					var width;
+					width = parseInt((docEl.clientWidth - 1170) / 2);
+					width = width>=0?width+"px":0;
+					if(docEl.clientWidth >= 1170) {
+						docEl.style.fontSize = 10 * ((document.documentElement.clientWidth || document.body.clientWidth) / 1920) + 'px';
+						$('.container').css("margin-left", width);
+						$('.container').css("margin-right", width);
+					}else{
+						
+					}
+				};
+
+			//绑定浏览器缩放与加载时间
+			window.addEventListener(resizeEvt, recalc, false);
+			document.addEventListener('DOMContentLoaded', recalc, false);
+
+		});
+	</script>
+
+</html>

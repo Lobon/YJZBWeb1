@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>保障大厅</title>
+		<link rel="shortcut icon" href="img/logo.png">
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" href="css/sercurityCanter.css" />
+		<script src="js/container.js"></script>
+	</head>
+
+	<body>
+		<div class="header b-header">
+			<div class="container">
+				<span class="fl-right lang-zh"></span>
+				<a href="login.html" class="fl-right icon-user"></a>
+				<ul class="menu">
+					<li tabindex="0" data-index="3">
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li tabindex="0" data-index="2">
+						<a href="carOwnersEncyclopedia.html">车主百科</a>
+					</li>
+					<li tabindex="0" data-index="1">
+						<a href="securityCanter.html" class="active">保障大厅</a>
+					</li>
+					<li tabindex="0" class="active" data-index="0">
+						<a href="ClaimCenter.html">理赔中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="userCenter.html">个人中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+				<span class="fl-left icon-logo"></span>
+			</div>
+		</div>
+		<div class="header s-header">
+			<div class="container">
+				<ul id="sub-menu" class="menu fl-left" data-header = 1>
+				</ul>
+			</div>
+		</div>
+		<div id="sercurity-deatil"></div>
+		<div class="section fp-auto-height footer footer-color">
+			<div class="detail">
+				<div class="model  l-margin">
+					<div>活动专区</div>
+					<div>进行活动</div>
+					<div>热门活动</div>
+					<div>往期活动</div>
+				</div>
+				<div class="model">
+					<div>关于公司</div>
+					<div>公司简介</div>
+					<div>加入我们</div>
+					<div>企业动态</div>
+				</div>
+				<div class="model">
+					<div>关于我们</div>
+					<div data-toggle="tooltip" title="<span class='code-wb'></span>">新浪微博</div>
+					<div data-toggle="tooltip" title="<span class='code-wx'></span>">官方微信</div>
+					<div data-toggle="tooltip" title="<span class='code-tt'></span>">官方头条</div>
+				</div>
+				<div class="fl-right r-margin">  
+					<div>400-100-0306</div>
+					<div>周一至周日9：00-18：30（仅收市话费）</div>
+				</div>
+			</div>
+			<div class="f-bootom l-margin r-margin">
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有  | <a href="ZBLawStatement.html">法律申明</a> | <a href="ZBTiaoKuan.html">隐私条款</a></p>
+				<p><a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/handlebars.min.js"></script>
+	<script type="text/x-handlebars-template" id="entry-template">
+		<div class="sercurity-model" data-page = 1>
+			<div class="container">
+				<h3 class="top1">{{schedule.title1}}</h3>
+				<h4>{{schedule.title2}}</h4>
+				<div class="img-schedule top1"></div>
+				<ul class="ul-schedule">
+					{{#each schedule.schedule}}
+					<li>
+						<p>{{name}}</p>
+					</li>
+					{{/each}}
+				</ul>
+				<div class="panel">
+					<div class="panel-heading">运输</div>
+					<div class="panel-body">
+						<div class="track-list">
+							<ul>
+								<li class="first">
+									<i class="node-icon"></i>
+									<span class="time">2018-03-10 18:07:15</span>
+									<span class="txt">您的订单开始处理</span>
+								</li>
+								<li>
+									<i class="node-icon"></i>
+									<span class="time">2018-03-11 18:07:15</span>
+									<span class="txt">您的订单正在打包</span>
+								</li>
+								<li>
+									<i class="node-icon"></i>
+									<span class="time">2018-03-12 18:07:15</span>
+									<span class="txt">[金华市]义乌大陈的楼加义扫描[15378294349]已揽货</span>
+								</li>
+								<li>
+									<i class="node-icon"></i>
+									<span class="time">2018-03-13 18:07:15</span>
+									<span class="txt">[深圳市]快递已到达深圳市</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<p>以上信息已经过优化处理
+							<a>请点击</a>
+						</p>
+					</div>
+				</div>
+				<div class="schedule-info top2 bottom1">
+					<p>运单号码：<span>435724467889</span></p>
+					<p>发件昵称：<span>众保汽车俱乐部</span></p>
+					<p>发货地址：<span>深圳市南山区清华信息港科研楼203</span></p>
+					<p>收货地址：<span>广东省深圳市宝安区 000000 张* 158****4179</span></p>
+				</div>				
+			</div>
+		</div>
+		<div class="sercurity-model" data-page = 2>
+			<div class="container">
+				<h3 class="top3">{{guarantee.title1}}</h3>
+				<h4>{{guarantee.title2}}</h4>
+				<h5 class="top3">{{guarantee.log}}</h5>
+				<div class="panel2">
+					<div class="schedule-info top2 bottom1">
+						<h4>被保障人</h4>
+						<p>被保人身份证号码（组织机构代码）：<span>000000000000000000</span></p>
+						<p>地址：<span>深圳市南山区清华信息港科研楼203</span></p>
+						<p>联系电话：<span>15673645278</span></p>
+						<p>鉴于投保人已向保障人提出投保申请，并同意按约定交付保障费，保险人依照承保障种及其对应条数和特别约定承担赔偿责任</p>
+					</div>	
+				</div>
+				<div class="panel2">
+					<div class="schedule-info top2 bottom1">
+						<h4>被保障人机动车信息</h4>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>车牌号：<span>湘A12343</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>机动车种类：<span>16座以下客车</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>使用性质：<span>非营业</span></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>发动机号：<span>湘A12343</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>识别代码（车架号）：<span>ls334294081736547</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>初登记日期：<span>2017-01-01</span></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>厂牌型号：<span>000000</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>核定载客：<span>x人</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>核定载质量：<span>xxkg</span></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>排量：<span>xx.xxL</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>功率：<span>xx.0</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>已使用年限：<span>1年</span></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>行驶区域：<span>中国境内</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>平均行驶里程：<span>211212KM</span></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>保障合同争议解决方式：<span>诉讼</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>保障期间：<span>自 2018 年 05 月 6 日 00：00 时 起至 2019 年 05 月 05 日 24:00 时止</span></p></div>
+						</div>
+					</div>	
+				</div>
+				<div class="panel2">
+					<div class="schedule-info top2 bottom1">
+						<h4>保障内容</h4>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>商业第三者责任险：<span>0000万</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>车上人员责任风险保障：<span>16座以下客车</span></p></div>					
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>玻璃破损风险保障：<span>进口</span></p></div>
+							<div class="col-sm-3 col-md-3 col-lg-3"><p>不计免赔：<span>车损、盗抢、座位、附加</span></p></div>							
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4"><p>合计费用：<span>6000元</span></p></div>
+							<div class="col-sm-4 col-md-4 col-lg-4"><p>人民币：<span>六仟</span></p></div>							
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-12"><p>相关说明：<span>每次理赔共计绝对免赔额500元</span></p></div>							
+						</div>
+					</div>	
+				</div>
+				<div class="panel2">
+					<div class="schedule-info top2 bottom1">
+						<h4>特别约定</h4>
+						<p>尊敬的用户：感谢您购买优驾众保汽车保障型理财产品，收到本表请立即核对，如无疑义，即视为同意合同条款及约定的全部内容。保障条款已附。</p>
+						<p>收费确认时间：<span>2018年04月28日17：12时</span></p>
+						<p>投保成功时间：<span>2018年04月28日17：12时</span></p>
+						<p>生成时间：<span>2018年04月28日17：12时</span></p>
+						<p>明示告知</p>
+						<p><span>1、请详细阅读优驾众保条款，特别是免责免除和投资人，被投资人义务</span></p>
+						<p><span>2、收到本保障单后，请立即核对，如有不符或疏漏，请及时通知众保汽车俱乐部并办理变更或补充手续</span></p>
+						<p><span>3、投资费用应一次性交清，请您及时核对保障单，如有不符，请及时与众保汽车俱乐部联系</span></p>
+						<p><span>4、请详细阅读优驾众保条款，特别是免责免除和投资人，被投资人义务</span></p>
+						<p>保障人   公司名称：<span>深圳市众保汽车俱乐部合伙企业（有限合伙）</span></p>
+						<p>公司地址：<span>深圳市科技园北区清华信息港A座601</span></p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="sercurity-model" data-page = 3>
+			<div class="container">
+				<h3 class="top3">{{insurance.title1}}</h3>
+				<h4>{{insurance.title2}}</h4>
+				<div class="row top4">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{insurance.inp-carno}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入车牌号"></div>
+				</div>
+				<div class="row top5">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{insurance.inp-id}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder="请输入保障单号"></div>
+				</div>
+				<div class="row top5 bottom2">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span></span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><button type="button" class="btn btn-block btn-primary">{{insurance.btn-text}}</button></div>
+				</div>
+			</div>
+		</div>
+		<div class="sercurity-model" data-page = 4>
+			<div class="container">
+				<h3 class="top3">{{violation.title1}}</h3>
+				<h4>{{violation.title2}}</h4>
+				<div class="row top4">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{violation.inp-city}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder=""></div>
+				</div>
+				<div class="row top5">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{violation.inp-serch-carno}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder=""></div>
+				</div>
+				<div class="row top5">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{violation.inp-buy-year}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder=""></div>
+				</div>
+				<div class="row top5">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span>{{violation.inp-telcode}}:</span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><input type="text" class="form-control" placeholder=""></div>
+				</div>
+				<div class="row top5 bottom2">
+					<div class="col-sm-3 col-md-3 col-lg-3  input-label"><span></span></div>
+					<div class="col-sm-6 col-md-6 col-lg-6"><button type="button" class="btn btn-block btn-primary">{{violation.btn-text}}</button></div>
+				</div>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/sercurityCenter.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+
+</html>
